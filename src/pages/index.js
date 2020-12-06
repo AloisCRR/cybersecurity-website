@@ -1,27 +1,25 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import IntroSection from "../components/landing/IntroPage"
+import AboutCyberSecSection from "../components/landing/AboutCyberSec"
+
+import IntroText from "../components/landing/atoms/IntroText"
+import CybersecurityLogo from "../components/landing/atoms/CybersecurityLogo"
+import SocialIcons from "../components/landing/atoms/Social"
+import MusicControl from "../components/landing/atoms/PlayPause"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div
-      style={{
-        maxWidth: `300px`,
-        marginBottom: `1.45rem`,
-        filter: `brightness(0.3)`,
-      }}
-    >
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <SEO title="Inicio" />
+    <IntroSection>
+      <CybersecurityLogo isAbsolute />
+      <SocialIcons />
+      <MusicControl />
+      <IntroText />
+    </IntroSection>
+    <AboutCyberSecSection />
   </Layout>
 )
 
