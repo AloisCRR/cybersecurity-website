@@ -7,7 +7,7 @@ const StyledCompanyImages = tw.section`flex bg-black h-52`
 
 const CompanyImages = () => {
   const data = useStaticQuery(graphql`
-    query MyQuery {
+    query {
       allFile(filter: { name: { regex: "/^(logo)/" } }) {
         edges {
           node {
