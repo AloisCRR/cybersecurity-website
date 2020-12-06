@@ -34,7 +34,7 @@ const PeopleWithInfluence = () => {
   `)
 
   const ImageData = [
-    { name: "Edward Snowden", position: "Ex empleado, NSA" },
+    { name: "Edward Snowden", position: "Periodista, ex-empleado NSA" },
     {
       name: "Chema Alonso",
       position: "Chief Digital Consumer Officer, Telefónica",
