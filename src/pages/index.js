@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import IntroSection from "../components/landing/IntroPage"
 import AboutCyberSecSection from "../components/landing/AboutCyberSec"
+import VideoSection from "../components/landing/VideoSection"
 
 import IntroText from "../components/landing/atoms/IntroText"
 import CybersecurityLogo from "../components/landing/atoms/CybersecurityLogo"
@@ -20,6 +21,7 @@ const IndexPage = () => (
       <IntroText />
     </IntroSection>
     <AboutCyberSecSection />
+    <VideoSection />
   </Layout>
 )
 
