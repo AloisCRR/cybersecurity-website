@@ -7,6 +7,7 @@ import AboutCyberSecSection from "../components/landing/AboutCyberSec"
 import VideoSection from "../components/landing/VideoSection"
 import Companies from "../components/landing/Companies"
 import PeopleWithInfluence from "../components/landing/PeopleWithInfluence"
+import Phrases from "../components/landing/Phrases"
 
 import IntroText from "../components/landing/atoms/IntroText"
 import CybersecurityLogo from "../components/landing/atoms/CybersecurityLogo"
@@ -26,6 +27,7 @@ const IndexPage = () => (
     <VideoSection />
     <Companies />
     <PeopleWithInfluence />
+    <Phrases />
   </Layout>
 )
 
