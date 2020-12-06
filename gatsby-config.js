@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Cybersecurity Site`,
+    title: `Ciberseguridad`,
     description: `All about cybersecurity!`,
     author: `Alois Carrera`,
   },
@@ -11,6 +11,14 @@ module.exports = {
       resolve: "gatsby-background-image",
       options: {
         specialChars: "/:",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /images/,
+        },
       },
     },
     {
