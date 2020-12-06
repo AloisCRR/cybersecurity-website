@@ -1,8 +1,8 @@
 import React from "react"
 import tw from "twin.macro"
 
-const StyledVideoInfo = tw.div`bg-black py-10 pl-10 flex-1`
-const StyledVideoInfoTitleText = tw.p`mb-10 uppercase font-bold text-2xl tracking-wider`
+const StyledVideoInfo = tw.div`bg-black py-10 pl-20 flex-1`
+const StyledVideoInfoTitleText = tw.p`mb-10 uppercase font-bold text-2xl tracking-wider text-center`
 const StyledParagraph = tw.p`text-justify mb-6`
 
 const VideoInfo = () => (
