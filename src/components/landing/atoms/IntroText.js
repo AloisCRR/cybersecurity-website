@@ -1,10 +1,10 @@
 import tw from "twin.macro"
 import React from "react"
 
-const StyledContainer = tw.div`absolute top-52 flex items-center flex-col w-full`
-const StyledIntroText = tw.p`font-cyber font-bold tracking-widest text-6xl text-white`
-const StyledIntroSubText = tw.p`font-cyber tracking-widest text-4xl text-white mt-8`
-const StyledIntroSmallText = tw.p`font-cyber text-white text-center mt-24 w-1/3`
+const StyledContainer = tw.div`absolute top-52 flex items-center flex-col w-full text-white`
+const StyledIntroText = tw.p`font-cyber font-bold tracking-widest text-6xl`
+const StyledIntroSubText = tw.p`font-cyber tracking-widest text-4xl mt-8`
+const StyledIntroSmallText = tw.p`font-cyber text-center mt-24 w-1/3`
 
 const IntroText = () => (
   <StyledContainer>
