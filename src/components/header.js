@@ -3,15 +3,15 @@ import PropTypes from "prop-types"
 import React from "react"
 import tw from "twin.macro"
 
-const NavBar = tw.header`h-16 w-full bg-red-800`
-const Home = tw.button`font-cyber font-bold text-lg bg-purple-800 text-white`
+const StyledNavBar = tw.header`h-16 w-full bg-red-800`
+const StyledHome = tw.button`font-cyber font-bold text-lg bg-purple-800 text-white`
 
 const Header = ({ siteTitle }) => (
-  <NavBar>
+  <StyledNavBar>
     <Link to="/">
-      <Home>{siteTitle}</Home>
+      <StyledHome>{siteTitle}</StyledHome>
     </Link>
-  </NavBar>
+  </StyledNavBar>
 )
 
 Header.propTypes = {
