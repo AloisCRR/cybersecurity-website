@@ -2,7 +2,7 @@ import React from "react"
 import tw from "twin.macro"
 
 import PauseButtonSVG from "../../../images/pause-button.svg"
-import PlayButtonSVG from "../../../images/play-button.svg"
+// import PlayButtonSVG from "../../../images/play-button.svg"
 
 const StyledMusic = tw.button`absolute text-white bottom-8 right-8 focus:outline-none`
 
