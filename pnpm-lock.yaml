@@ -13,6 +13,7 @@ dependencies:
   prop-types: 15.7.2
   react: 16.14.0
   react-dom: 16.14.0_react@16.14.0
+  react-h5-audio-player: 3.5.0_react-dom@16.14.0+react@16.14.0
   react-helmet: 6.1.0_react@16.14.0
 devDependencies:
   '@emotion/core': 10.0.5_react@16.14.0
@@ -1560,6 +1561,18 @@ packages:
     dev: false
     resolution:
       integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==
+  /@iconify/icons-mdi/1.1.1:
+    dev: false
+    resolution:
+      integrity: sha512-/hda/8L32bnEQG4Gte2gnkUXuUSQDUyNM0XXSKoaSoigAuMM8D62A1Mqs1pssL7adH/vmYydVJDcn2UKjtNxqg==
+  /@iconify/react/1.1.3_react@16.14.0:
+    dependencies:
+      react: 16.14.0
+    dev: false
+    peerDependencies:
+      react: ^16.0.0
+    resolution:
+      integrity: sha512-ReZNJyr89AfED6XZIXkhsJiNv2taT3j1cTo1HVPHMsrKOz6gAYdXtD2kDWF6+GVoFUxpmnO0fMcA6yCyTf6Tow==
   /@jest/types/25.5.0:
     dependencies:
       '@types/istanbul-lib-coverage': 2.0.3
@@ -11900,6 +11913,19 @@ packages:
     dev: false
     resolution:
       integrity: sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==
+  /react-h5-audio-player/3.5.0_react-dom@16.14.0+react@16.14.0:
+    dependencies:
+      '@babel/runtime': 7.12.5
+      '@iconify/icons-mdi': 1.1.1
+      '@iconify/react': 1.1.3_react@16.14.0
+      react: 16.14.0
+      react-dom: 16.14.0_react@16.14.0
+    dev: false
+    peerDependencies:
+      react: ^16.3.0
+      react-dom: ^16.3.0
+    resolution:
+      integrity: sha512-d8UyDZArysAn2aCs/lRwBGat40IylzOOETG0gwQtuTQhvVb5S8DKbxImbG6iSoqN7LFB2D0YxJ6iFwElSww9Mg==
   /react-helmet/6.1.0_react@16.14.0:
     dependencies:
       object-assign: 4.1.1
@@ -15254,6 +15280,7 @@ specifiers:
   prop-types: ^15.7.2
   react: ^16.12.0
   react-dom: ^16.12.0
+  react-h5-audio-player: ^3.5.0
   react-helmet: ^6.1.0
   svg-react-loader: ^0.4.6
   tailwindcss: ^2.0.1

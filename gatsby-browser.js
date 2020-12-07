@@ -8,4 +8,6 @@
 
 import "fontsource-space-mono"
 import "fontsource-montserrat"
+import "react-h5-audio-player/lib/styles.css"
+import "./src/style/styles.css"
 import "tailwindcss/dist/base.min.css"
