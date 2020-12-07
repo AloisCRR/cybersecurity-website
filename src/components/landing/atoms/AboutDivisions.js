@@ -2,6 +2,9 @@ import React from "react"
 import tw from "twin.macro"
 
 import InfoCard from "./InfoCard"
+import People from "../../../images/people.svg"
+import Process from "../../../images/process.svg"
+import Technology from "../../../images/technology.svg"
 
 const Box = tw.div`flex flex-1 p-8`
 const textOne = `Los usuarios deben entender y cumplir con los principios básicos de seguridad de datos como la elección de contraseñas fuertes, ser cuidadosos con los archivos adjuntos en el correo electrónico y hacer copias de seguridad de los datos.`
@@ -19,12 +22,28 @@ const AboutDivisions = () => (
   >
     <Box style={{ flexDirection: `column` }}>
       <div style={{ marginBottom: `4rem` }}>
-        <InfoCard text={textOne} title={`Personas`} />
+        <InfoCard text={textOne} title={`Personas`}>
+          <People
+            style={{
+              maxWidth: `60px`,
+              maxHeight: `60px`,
+              fill: `currentColor`,
+            }}
+          />
+        </InfoCard>
       </div>
-      <InfoCard text={textTwo} title={`Procesos`} />
+      <InfoCard text={textTwo} title={`Procesos`}>
+        <Process
+          style={{ maxWidth: `60px`, maxHeight: `60px`, fill: `currentColor` }}
+        />
+      </InfoCard>
     </Box>
     <Box style={{ alignItems: `center` }}>
-      <InfoCard text={textThree} title={`Tecnología`} />
+      <InfoCard text={textThree} title={`Tecnología`}>
+        <Technology
+          style={{ maxWidth: `60px`, maxHeight: `60px`, fill: `currentColor` }}
+        />
+      </InfoCard>
     </Box>
   </div>
 )
