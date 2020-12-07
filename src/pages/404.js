@@ -1,14 +1,21 @@
 import React from "react"
-
-import Layout from "../components/layout"
+import tw from "twin.macro"
 import SEO from "../components/seo"
 
+const StyledNotFoundPage = tw.main`w-full h-screen flex justify-center items-center font-cyberSpace bg-black text-white`
+const StyledTitle = tw.h1`text-9xl p-8`
+const StyledDescription = tw.p``
+
 const NotFoundPage = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-    <h1>404: Not Found</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
+  <>
+    <SEO title="404: Ruta no encontrada" />
+    <StyledNotFoundPage>
+      <StyledTitle>404</StyledTitle>
+      <StyledDescription>
+        La ruta a la que está intentando acceder no existe...
+      </StyledDescription>
+    </StyledNotFoundPage>
+  </>
 )
 
 export default NotFoundPage
