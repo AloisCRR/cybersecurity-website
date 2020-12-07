@@ -10,18 +10,30 @@ const StyledButton = tw.button`focus:outline-none mb-8`
 const SocialIcons = () => (
   <StyledSocialIcons>
     <StyledButton>
-      <TwitterLogoSVG
-        style={{
-          maxWidth: `40px`,
-          maxHeight: `40px`,
-          fill: `currentColor`,
-        }}
-      />
+      <a
+        href="https://twitter.com/AloisCRR"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <TwitterLogoSVG
+          style={{
+            maxWidth: `40px`,
+            maxHeight: `40px`,
+            fill: `currentColor`,
+          }}
+        />
+      </a>
     </StyledButton>
     <StyledButton>
-      <InstagramLogoSVG
-        style={{ maxWidth: `40px`, maxHeight: `40px`, fill: `currentColor` }}
-      />
+      <a
+        href="https://www.instagram.com/aloiscrr16/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <InstagramLogoSVG
+          style={{ maxWidth: `40px`, maxHeight: `40px`, fill: `currentColor` }}
+        />
+      </a>
     </StyledButton>
   </StyledSocialIcons>
 )

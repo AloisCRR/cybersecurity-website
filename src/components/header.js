@@ -1,25 +1,18 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
-import tw from "twin.macro"
 
-const StyledNavBar = tw.header`h-16 w-full bg-red-800`
-const StyledHome = tw.button`font-cyber font-bold text-lg bg-purple-800 text-white`
+import IntroSection from "./landing/IntroPage"
+import IntroText from "./landing/atoms/IntroText"
+import CybersecurityLogo from "./landing/atoms/CybersecurityLogo"
+import SocialIcons from "./landing/atoms/Social"
+import MusicControl from "./landing/atoms/AudioPlayer"
 
-const Header = ({ siteTitle }) => (
-  <StyledNavBar>
-    <Link to="/">
-      <StyledHome>{siteTitle}</StyledHome>
-    </Link>
-  </StyledNavBar>
+const Header = () => (
+  <IntroSection>
+    <CybersecurityLogo isAbsolute />
+    <SocialIcons />
+    <MusicControl />
+    <IntroText />
+  </IntroSection>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

@@ -23,13 +23,17 @@ const BackgroundSection = ({ className, children }) => {
   }
 
   return (
-    <BackgroundImage Tag="section" className={className} fluid={imageData}>
+    <BackgroundImage
+      Tag="header"
+      style={{ position: `fixed` }}
+      className={className}
+      fluid={imageData}
+    >
       <div
         style={{
           width: `100%`,
           height: `100%`,
           backgroundColor: `rgba(0,0,0,0.7)`,
-          position: `relative`,
         }}
       >
         {children}
@@ -38,6 +42,8 @@ const BackgroundSection = ({ className, children }) => {
   )
 }
 
-const StyledBackgroundSection = tw(BackgroundSection)`w-full h-screen`
+const StyledBackgroundSection = tw(
+  BackgroundSection
+)`h-screen w-full fixed top-0`
 
 export default StyledBackgroundSection
