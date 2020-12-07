@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 
 import PhraseCard from "./atoms/PhraseCard"
 
-const StyledPhrasesContainer = tw.div`flex`
+const StyledPhrasesContainer = tw.div`flex mb-24`
 const PhrasesSectionTitle = tw.h1`my-24 uppercase text-center font-semibold text-3xl tracking-widest`
 const StyledPhrases = tw.section`flex flex-col bg-black font-cyber text-white`
 

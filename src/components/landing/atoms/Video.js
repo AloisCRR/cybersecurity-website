@@ -2,8 +2,8 @@ import React from "react"
 import tw, { styled } from "twin.macro"
 
 const StyledVideoEmbedded = styled.div(() => [
-  `flex: 2;`,
   tw`bg-black p-20 flex justify-center items-center`,
+  `flex: 2;`,
 ])
 
 const VideoEmbedded = () => (
