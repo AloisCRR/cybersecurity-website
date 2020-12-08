@@ -33,7 +33,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        icon: `${__dirname}/src/images/logo.png`,
+        icon: `${__dirname}/src/images/favicon.png`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
