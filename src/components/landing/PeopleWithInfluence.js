@@ -33,20 +33,26 @@ const PeopleWithInfluence = () => {
     }
   `)
 
-  const ImageData = [
-    { name: "Edward Snowden", position: "Periodista, ex-empleado NSA" },
-    {
+  const ImageData = {
+    "influencia_edward_snowden.jpg": {
+      name: "Edward Snowden",
+      position: "Periodista, ex-empleado NSA",
+    },
+    "influencia_chema_alonso.jpg": {
       name: "Chema Alonso",
       position: "Chief Digital Consumer Officer, Telefónica",
     },
-    { name: "Eugene Kaspersky", position: "CEO, Kaspersky Lab" },
-  ]
+    "influencia_Eugene_Kaspersky.jpg": {
+      name: "Eugene Kaspersky",
+      position: "CEO, Kaspersky Lab",
+    },
+  }
 
   return (
     <StyledContainer>
       <StyledTitleText>Personas con influencia en el sector</StyledTitleText>
       <StyledImages>
-        {data.allFile.edges.map(({ node }, index) => (
+        {data.allFile.edges.map(({ node }) => (
           <StyledImageContainer key={node.base}>
             <Img
               style={{ width: `80%`, height: `80%` }}
@@ -54,9 +60,9 @@ const PeopleWithInfluence = () => {
               fluid={node.childImageSharp.fluid}
             ></Img>
             <StyledImageData>
-              <StyledImageName>{ImageData[index].name}</StyledImageName>
+              <StyledImageName>{ImageData[node.base].name}</StyledImageName>
               <StyledImagePosition>
-                {ImageData[index].position}
+                {ImageData[node.base].position}
               </StyledImagePosition>
             </StyledImageData>
           </StyledImageContainer>

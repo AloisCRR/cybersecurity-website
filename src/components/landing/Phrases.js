@@ -38,11 +38,20 @@ const Phrases = () => {
   // Tim
   const phraseThree = `Si pones una llave bajo el tapete para la policía, un ladrón también puede encontrarla. Los criminales están usando todas las herramientas tecnológicas a su disposición para hackear las cuentas de la gente. Si saben que hay una llave escondida en algún lugar, no se detendrán hasta encontrarla.`
 
-  const PhrasesArray = [
-    { autor: "- Edward Snowden, Periodista", frase: phraseOne },
-    { autor: "- Stephen Hawking, Físico teórico", frase: phraseTwo },
-    { autor: "- Tim Cook, CEO de Apple", frase: phraseThree },
-  ]
+  const Phrases = {
+    "quote_stephen_hawking.jpg": {
+      autor: "- Stephen Hawking, Físico teórico",
+      frase: phraseTwo,
+    },
+    "quote_tim_cook.jpg": {
+      autor: "- Tim Cook, CEO de Apple",
+      frase: phraseThree,
+    },
+    "quote_edward_snowden.jpg": {
+      autor: "- Edward Snowden, Periodista",
+      frase: phraseOne,
+    },
+  }
 
   return (
     <StyledPhrases>
@@ -50,8 +59,8 @@ const Phrases = () => {
       <StyledPhrasesContainer>
         {data.allFile.edges.map(({ node }, index) => (
           <PhraseCard
-            author={PhrasesArray[index].autor}
-            text={PhrasesArray[index].frase}
+            author={Phrases[node.base].autor}
+            text={Phrases[node.base].frase}
             key={node.base}
           >
             <Img
