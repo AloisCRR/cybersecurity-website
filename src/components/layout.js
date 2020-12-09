@@ -16,7 +16,13 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <main style={{ position: `relative`, marginTop: `100vh` }}>
+      <main
+        style={{
+          position: `relative`,
+          marginTop: `100vh`,
+          backgroundColor: `black`,
+        }}
+      >
         {children}
       </main>
       <Footer />

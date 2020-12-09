@@ -49,7 +49,11 @@ const PeopleWithInfluence = () => {
   }
 
   return (
-    <StyledContainer>
+    <StyledContainer
+      data-sal="slide-up"
+      data-sal-delay="300"
+      data-sal-easing="ease"
+    >
       <StyledTitleText>Personas con influencia en el sector</StyledTitleText>
       <StyledImages>
         {data.allFile.edges.map(({ node }) => (

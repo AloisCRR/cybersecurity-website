@@ -54,7 +54,11 @@ const Phrases = () => {
   }
 
   return (
-    <StyledPhrases>
+    <StyledPhrases
+      data-sal="slide-up"
+      data-sal-delay="300"
+      data-sal-easing="ease"
+    >
       <PhrasesSectionTitle>Frases memorables</PhrasesSectionTitle>
       <StyledPhrasesContainer>
         {data.allFile.edges.map(({ node }, index) => (

@@ -7,7 +7,11 @@ import Video from "./atoms/Video"
 const StyledVideoSection = tw.section`flex flex-wrap font-cyber text-white`
 
 const VideoSection = () => (
-  <StyledVideoSection>
+  <StyledVideoSection
+    data-sal="slide-up"
+    data-sal-delay="300"
+    data-sal-easing="ease"
+  >
     <VideoInfo />
     <Video />
   </StyledVideoSection>

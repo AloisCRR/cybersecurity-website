@@ -60,7 +60,11 @@ const LatinCompanies = () => {
   }
 
   return (
-    <StyledLatinCompaniesContainer>
+    <StyledLatinCompaniesContainer
+      data-sal="slide-up"
+      data-sal-delay="300"
+      data-sal-easing="ease"
+    >
       <StyledLatinCompaniesSectionTitle>
         Ciberseguridad en Panamá
       </StyledLatinCompaniesSectionTitle>

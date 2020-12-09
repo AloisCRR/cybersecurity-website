@@ -28,7 +28,11 @@ const CompanyImages = () => {
   `)
 
   return (
-    <StyledCompanyImages>
+    <StyledCompanyImages
+      data-sal="slide-up"
+      data-sal-delay="300"
+      data-sal-easing="ease"
+    >
       {data.allFile.edges.map(({ node }) => (
         <Img
           style={{ width: `100%` }}
